@@ -16,7 +16,7 @@ Node* insert(Node* node, int value) {
     if (!node)
         return newNode;
     Node* cur = node;
-    Node* prev = nullptr;
+    Node* prev = cur;
     while (cur->left && cur->right)
     {
         if (cur->key > value)
